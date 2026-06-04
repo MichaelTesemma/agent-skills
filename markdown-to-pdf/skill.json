@@ -1,0 +1,11 @@
+{
+  "name": "markdown-to-pdf",
+  "description": "Converts markdown files to PDF using markdown-pdf npm package",
+  "args": {
+    "files": {
+      "type": "string",
+      "description": "Glob pattern for markdown files to convert (default: *.md)",
+      "default": "*.md"
+    }
+  }
+}
