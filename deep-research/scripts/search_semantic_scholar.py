@@ -15,6 +15,8 @@ import sys
 import time
 import urllib.parse
 import urllib.request
+import ssl
+ssl._create_default_https_context = ssl._create_unverified_context
 
 S2_API = "https://api.semanticscholar.org/graph/v1"
 FIELDS = "title,authors,abstract,year,venue,citationCount,externalIds,url,referenceCount,publicationDate"

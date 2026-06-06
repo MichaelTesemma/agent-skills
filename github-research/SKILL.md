@@ -349,6 +349,12 @@ Do NOT just summarize READMEs. You must:
 - `technique_map.md` mapping concepts to code
 - `analysis_report.md` with findings
 
+**After completing Phase 5**: Generate a combined PDF of all markdown files in `phase5_analysis/`:
+```bash
+python /Users/lingzhi/.claude/skills/github-research/scripts/make_phase_pdf.py --phase-dir phase5_analysis
+```
+This creates `phase5_analysis/phase5_analysis.pdf` with a table of contents linking to each analysis section.
+
 ---
 
 ## Phase 6: Blueprint
@@ -384,6 +390,12 @@ Do NOT just summarize READMEs. You must:
 - `reuse_catalog.md` with component catalog
 - `final_report.md` compiled
 - `blueprint_summary.md` as executive summary
+
+**After completing Phase 6**: Generate a combined PDF of all markdown files in `phase6_blueprint/`:
+```bash
+python /Users/lingzhi/.claude/skills/github-research/scripts/make_phase_pdf.py --phase-dir phase6_blueprint
+```
+This creates `phase6_blueprint/phase6_blueprint.pdf` with a table of contents linking to each blueprint section.
 
 ---
 

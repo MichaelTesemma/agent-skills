@@ -176,6 +176,12 @@ Taxonomy, comparative tables, gap analysis.
 
 → Output: `phase5_synthesis/synthesis.md`, `phase5_synthesis/gaps.md`
 
+**After completing Phase 5**: Generate a combined PDF of all markdown files in `phase5_synthesis/`:
+```bash
+python /Users/lingzhi/.claude/skills/deep-research/scripts/make_phase_pdf.py --phase-dir phase5_synthesis
+```
+This creates `phase5_synthesis/phase5_synthesis.pdf` with a table of contents linking to each section.
+
 ### Phase 6: Compilation (REQUIRES Phase 1-5 complete)
 Assemble final report from ALL prior phase outputs. Mark preprint citations with `(preprint)` suffix.
 
@@ -189,6 +195,12 @@ Assemble final report from ALL prior phase outputs. Mark preprint citations with
 If ANY are missing, go back and complete the missing phase(s) first.
 
 → Output: `phase6_report/report.md`, `phase6_report/references.bib`
+
+**After completing Phase 6**: Generate a combined PDF of all markdown files in `phase6_report/`:
+```bash
+python /Users/lingzhi/.claude/skills/deep-research/scripts/make_phase_pdf.py --phase-dir phase6_report
+```
+This creates `phase6_report/phase6_report.pdf` with a table of contents linking to each section.
 
 ## Output Directory
 

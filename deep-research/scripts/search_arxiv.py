@@ -15,6 +15,8 @@ import sys
 import time
 import urllib.parse
 import urllib.request
+import ssl
+ssl._create_default_https_context = ssl._create_unverified_context
 import xml.etree.ElementTree as ET
 from datetime import datetime
 
